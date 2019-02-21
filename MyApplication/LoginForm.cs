@@ -67,10 +67,15 @@ namespace MyApplication
 
                     return;
                 }
-                MainForm mainForm = new MainForm();
-                mainForm.Show();
-                //System.Windows.Forms.MessageBox.Show("Welcome...");
 
+				Infrastructure.Utility.AuthenticatedUser = foundedUser;
+
+				Hide();
+
+				Infrastructure.Utility.MainForm.InitializeMainForm();
+
+				Infrastructure.Utility.MainForm.Show();
+                
             }
             catch (System.Exception ex)
             {
@@ -90,14 +95,19 @@ namespace MyApplication
         private void ResetButton_Click(object sender, System.EventArgs e)
         {
             ResetForm();
-            usernameTextBox.Focus();
         }
+		public void ResetForm()
+		{
+			usernameTextBox.Text = string.Empty;
+			passwordTextBox.Text = string.Empty;
 
-        private void RegisterButton_Click(object sender, System.EventArgs e)
+			usernameTextBox.Focus();
+		}
+
+		private void RegisterButton_Click(object sender, System.EventArgs e)
         {
-            RegisterForm registerForm = new RegisterForm();
-            Hide();
-            registerForm.Show();
+			Hide();
+			Infrastructure.Utility.RegisterForm.Show();
         }
 
         private void ExitButton_Click(object sender, System.EventArgs e)
@@ -105,10 +115,6 @@ namespace MyApplication
             System.Windows.Forms.Application.Exit();
         }
 
-        private void ResetForm()
-        {
-            usernameTextBox.Text = string.Empty;
-            passwordTextBox.Text = string.Empty;
-        }
+
     }
 }

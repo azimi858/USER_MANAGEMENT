@@ -2,87 +2,148 @@
 
 namespace MyApplication
 {
-    public partial class RegisterForm : Infrastructure.BaseForm
-    {
-        public RegisterForm()
-        {
-            InitializeComponent();
-        }
+	public partial class RegisterForm : Infrastructure.BaseForm
+	{
+		public RegisterForm()
+		{
+			InitializeComponent();
+		}
 
-        private void exitBotton_Click(object sender, System.EventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
+		private void RegisterForm_Load(object sender, System.EventArgs e)
+		{
+		}
 
-        private void resetBotton_Click(object sender, System.EventArgs e)
-        {
-            ResetForm();
-            usernameTextBox.Focus();
-        }
+		private void RegisterButton_Click(object sender, System.EventArgs e)
+		{
+			if ((string.IsNullOrWhiteSpace(usernameTextBox.Text)) ||
+				(string.IsNullOrWhiteSpace(passwordTextBox.Text)))
+			{
+				usernameTextBox.Text =
+					usernameTextBox.Text.Replace(" ", string.Empty);
 
-        private void ResetForm()
-        {
-            usernameTextBox.Text = string.Empty;
-            passwordTextBox.Text = string.Empty;
-            fullnameTextBox.Text = string.Empty;
-        }
+				passwordTextBox.Text =
+					passwordTextBox.Text.Replace(" ", string.Empty);
 
-        private void loginBotton_Click(object sender, System.EventArgs e)
-        {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
-        }
+				System.Windows.Forms.MessageBox.Show("Username & Password is required ...");
 
-        private void registerButton_Click(object sender, System.EventArgs e)
-        {
-            Models.DatabaseContext databaseContext = null;
+				if (usernameTextBox.Text == string.Empty)
+				{
+					usernameTextBox.Focus();
+				}
+				else
+				{
+					passwordTextBox.Focus();
+				}
 
-            try
-            {
-                databaseContext = new Models.DatabaseContext();
+				return;
+			}
 
-                Models.User user = databaseContext.Users
-                    .Where(current => string.Compare(current.Username, usernameTextBox.Text, true) == 0).FirstOrDefault();
+			string errorMessages = string.Empty;
 
-                if (user != null)
-                {
-                    System.Windows.Forms.MessageBox.Show("This user is currently exist");
+			if (usernameTextBox.Text.Length < 6)
+			{
+				errorMessages = "Username length should be at least 6 characters!";
+			}
 
-                    usernameTextBox.Focus();
+			if (passwordTextBox.Text.Length < 8)
+			{
+				if (errorMessages != string.Empty)
+				{
+					errorMessages += System.Environment.NewLine;
+				}
+				errorMessages += "Password length should be at least 8 characters!";
+			}
 
-                    return;
-                }
+			if (errorMessages != string.Empty)
+			{
+				System.Windows.Forms.MessageBox.Show(errorMessages);
 
-                user = new Models.User
-                {
-                    Username = usernameTextBox.Text,
-                    Password=passwordTextBox.Text,
-                    FullName = fullnameTextBox.Text,
-                    
-                    IsActive = true
-                    
-                };
+				return;
+			}
 
-                databaseContext.Users.Add(user);
-                databaseContext.SaveChanges();
 
-                System.Windows.Forms.MessageBox.Show("Register Done!");
+			// **************************************************
 
-                ResetForm();
+			Models.DatabaseContext databaseContext = null;
 
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show("Error! :" + ex.Message);
-            }
-            finally
-            {
-                if (databaseContext != null)
-                {
-                    databaseContext.Dispose();
-                    databaseContext = null;
-                }
-            }
-        }
-    }
+			try
+			{
+				databaseContext = new Models.DatabaseContext();
+
+				Models.User user = 
+					databaseContext.Users
+					.Where(current => string.Compare(current.Username, usernameTextBox.Text, true) == 0)
+					.FirstOrDefault();
+
+				if(user != null)
+				{
+					System.Windows.Forms.MessageBox.Show
+						("This username is already exist! Please choose another one...");
+
+					usernameTextBox.Focus();
+
+					return;
+				}
+
+				user = new Models.User
+				{
+					Username = usernameTextBox.Text,
+					Password=passwordTextBox.Text,
+					FullName = fullnameTextBox.Text,
+
+					IsActive=true
+				};
+
+				databaseContext.Users.Add(user);
+
+				databaseContext.SaveChanges();
+
+				Hide();
+
+				Infrastructure.Utility.LoginForm.Show();
+
+				System.Windows.Forms.MessageBox.Show("registration Done ...");
+
+			}
+			catch (System.Exception ex)
+			{
+				System.Windows.Forms.MessageBox.Show(ex.Message);
+			}
+			finally
+			{
+				if (databaseContext != null)
+				{
+					databaseContext.Dispose();
+					databaseContext = null;
+				}
+			}
+
+		}
+
+		private void ResetBotton_Click(object sender, System.EventArgs e)
+		{
+			ResetForm();
+		}
+
+		public void ResetForm()
+		{
+			usernameTextBox.Text = string.Empty;
+			passwordTextBox.Text = string.Empty;
+			fullnameTextBox.Text = string.Empty;
+
+			usernameTextBox.Focus();
+		}
+
+		private void LoginBotton_Click(object sender, System.EventArgs e)
+		{
+			Hide();
+			Infrastructure.Utility.LoginForm.Show();
+		}
+
+		private void ExitBotton_Click(object sender, System.EventArgs e)
+		{
+			System.Windows.Forms.Application.Exit();
+		}
+
+	}
 }
