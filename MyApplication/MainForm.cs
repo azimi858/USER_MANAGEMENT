@@ -16,12 +16,12 @@ namespace MyApplication
 			if (string.IsNullOrWhiteSpace(Infrastructure.Utility.AuthenticatedUser.FullName))
 			{
 				welcomeToolStripStatusLabel.Text =
-					$"Welcome{Infrastructure.Utility.AuthenticatedUser.Username}";
+					$"Welcome {Infrastructure.Utility.AuthenticatedUser.Username}";
 			}
 			else
 			{
 				welcomeToolStripStatusLabel.Text =
-					$"Welcome{Infrastructure.Utility.AuthenticatedUser.FullName}";
+					$"Welcome {Infrastructure.Utility.AuthenticatedUser.FullName}";
 			}
 		}
 
