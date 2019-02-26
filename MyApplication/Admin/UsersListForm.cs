@@ -8,5 +8,10 @@ namespace MyApplication.Admin
 		{
 			InitializeComponent();
 		}
+
+		private void searchButton_Click(object sender, System.EventArgs e)
+		{
+
+		}
 	}
 }
