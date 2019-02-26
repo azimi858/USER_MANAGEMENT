@@ -2,7 +2,7 @@
 
 namespace MyApplication
 {
-	public partial class UpdateProfileForm : System.Windows.Forms.Form
+	public partial class UpdateProfileForm : Infrastructure.BaseForm
 	{
 		public UpdateProfileForm()
 		{

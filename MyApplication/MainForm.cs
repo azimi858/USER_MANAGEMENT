@@ -56,6 +56,16 @@ namespace MyApplication
 			System.Windows.Forms.Application.Exit();
 		}
 
+		private void LogoutToolStripMenuItem_Click(object sender, System.EventArgs e)
+		{
+			Infrastructure.Utility.MainForm.Hide();
+			Infrastructure.Utility.AuthenticatedUser = null;
+			Infrastructure.Utility.LoginForm.Show();
+		}
 
+		private void ExitToolStripMenuItem_Click(object sender, System.EventArgs e)
+		{
+			System.Windows.Forms.Application.Exit();
+		}
 	}
 }
