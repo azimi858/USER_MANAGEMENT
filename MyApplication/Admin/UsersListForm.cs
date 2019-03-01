@@ -2,11 +2,16 @@
 
 namespace MyApplication.Admin
 {
-	public partial class deleteUsersButton : Infrastructure.BaseForm
+	public partial class UsersListForm : Infrastructure.BaseForm
 	{
-		public deleteUsersButton()
+		public UsersListForm()
 		{
 			InitializeComponent();
+		}
+
+		private void SearchButton_Click(object sender, System.EventArgs e)
+		{
+
 		}
 	}
 }

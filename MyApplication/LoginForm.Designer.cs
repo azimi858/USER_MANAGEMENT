@@ -66,6 +66,7 @@
 			this.usernameTextBox.Name = "usernameTextBox";
 			this.usernameTextBox.Size = new System.Drawing.Size(361, 24);
 			this.usernameTextBox.TabIndex = 1;
+			this.usernameTextBox.Text = "dariush";
 			// 
 			// passwordTextBox
 			// 
@@ -75,6 +76,7 @@
 			this.passwordTextBox.Name = "passwordTextBox";
 			this.passwordTextBox.Size = new System.Drawing.Size(361, 24);
 			this.passwordTextBox.TabIndex = 3;
+			this.passwordTextBox.Text = "1234512345";
 			this.passwordTextBox.UseSystemPasswordChar = true;
 			// 
 			// loginButton
@@ -125,7 +127,8 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.SteelBlue;
 			this.CancelButton = this.exitButton;
-			this.ClientSize = new System.Drawing.Size(477, 120);
+			this.ClientSize = new System.Drawing.Size(477, 118);
+			this.ControlBox = false;
 			this.Controls.Add(this.exitButton);
 			this.Controls.Add(this.registerButton);
 			this.Controls.Add(this.resetButton);
@@ -134,8 +137,8 @@
 			this.Controls.Add(this.usernameTextBox);
 			this.Controls.Add(this.PasswordLabel);
 			this.Controls.Add(this.UsernameLabel);
-			this.MaximumSize = new System.Drawing.Size(495, 167);
-			this.MinimumSize = new System.Drawing.Size(495, 167);
+			this.MaximumSize = new System.Drawing.Size(495, 165);
+			this.MinimumSize = new System.Drawing.Size(495, 165);
 			this.Name = "LoginForm";
 			this.Text = "Login";
 			this.ResumeLayout(false);

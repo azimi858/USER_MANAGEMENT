@@ -1,6 +1,6 @@
 ﻿namespace MyApplication.Admin
 {
-	partial class deleteUsersButton
+	partial class UsersListForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -62,6 +62,7 @@
 			this.searchButton.TabIndex = 2;
 			this.searchButton.Text = "&Search";
 			this.searchButton.UseVisualStyleBackColor = true;
+			this.searchButton.Click += new System.EventHandler(this.SearchButton_Click);
 			// 
 			// usersListBox
 			// 
@@ -81,7 +82,7 @@
 			this.button2.Text = "&Delet User";
 			this.button2.UseVisualStyleBackColor = true;
 			// 
-			// deleteUsersButton
+			// UsersListForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,7 +93,7 @@
 			this.Controls.Add(this.searchButton);
 			this.Controls.Add(this.fullNameTextBox);
 			this.Controls.Add(this.fullNameLabel);
-			this.Name = "deleteUsersButton";
+			this.Name = "UsersListForm";
 			this.Text = "Users List";
 			this.ResumeLayout(false);
 			this.PerformLayout();

@@ -122,5 +122,10 @@ namespace MyApplication
 				}
 			}
 		}
+
+		private void closeButton_Click(object sender, System.EventArgs e)
+		{
+			Hide();
+		}
 	}
 }

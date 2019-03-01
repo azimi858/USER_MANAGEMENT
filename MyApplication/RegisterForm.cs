@@ -145,5 +145,9 @@ namespace MyApplication
 			System.Windows.Forms.Application.Exit();
 		}
 
+		private void RegisterForm_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
+		{
+			System.Windows.Forms.Application.Exit();
+		}
 	}
 }
