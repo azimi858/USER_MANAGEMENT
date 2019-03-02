@@ -43,7 +43,7 @@
 			// 
 			this.fullNameLable.AutoSize = true;
 			this.fullNameLable.ForeColor = System.Drawing.Color.White;
-			this.fullNameLable.Location = new System.Drawing.Point(14, 9);
+			this.fullNameLable.Location = new System.Drawing.Point(10, 21);
 			this.fullNameLable.Name = "fullNameLable";
 			this.fullNameLable.Size = new System.Drawing.Size(63, 13);
 			this.fullNameLable.TabIndex = 0;
@@ -53,7 +53,7 @@
 			// 
 			this.descriptionLable.AutoSize = true;
 			this.descriptionLable.ForeColor = System.Drawing.Color.White;
-			this.descriptionLable.Location = new System.Drawing.Point(14, 37);
+			this.descriptionLable.Location = new System.Drawing.Point(10, 49);
 			this.descriptionLable.Name = "descriptionLable";
 			this.descriptionLable.Size = new System.Drawing.Size(71, 13);
 			this.descriptionLable.TabIndex = 0;
@@ -63,7 +63,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.ForeColor = System.Drawing.Color.White;
-			this.label3.Location = new System.Drawing.Point(112, 245);
+			this.label3.Location = new System.Drawing.Point(107, 403);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(41, 13);
 			this.label3.TabIndex = 0;
@@ -71,23 +71,23 @@
 			// 
 			// fullNameTextBox
 			// 
-			this.fullNameTextBox.Location = new System.Drawing.Point(94, 6);
+			this.fullNameTextBox.Location = new System.Drawing.Point(90, 18);
 			this.fullNameTextBox.Name = "fullNameTextBox";
 			this.fullNameTextBox.Size = new System.Drawing.Size(398, 21);
 			this.fullNameTextBox.TabIndex = 1;
 			// 
 			// descriptionTextBox
 			// 
-			this.descriptionTextBox.Location = new System.Drawing.Point(94, 34);
+			this.descriptionTextBox.Location = new System.Drawing.Point(90, 46);
 			this.descriptionTextBox.Multiline = true;
 			this.descriptionTextBox.Name = "descriptionTextBox";
 			this.descriptionTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.descriptionTextBox.Size = new System.Drawing.Size(399, 178);
+			this.descriptionTextBox.Size = new System.Drawing.Size(399, 324);
 			this.descriptionTextBox.TabIndex = 2;
 			// 
 			// saveAndCloseButton
 			// 
-			this.saveAndCloseButton.Location = new System.Drawing.Point(95, 264);
+			this.saveAndCloseButton.Location = new System.Drawing.Point(90, 422);
 			this.saveAndCloseButton.Name = "saveAndCloseButton";
 			this.saveAndCloseButton.Size = new System.Drawing.Size(114, 23);
 			this.saveAndCloseButton.TabIndex = 3;
@@ -99,7 +99,7 @@
 			// 
 			this.isActiveCheckBox.AutoSize = true;
 			this.isActiveCheckBox.ForeColor = System.Drawing.Color.White;
-			this.isActiveCheckBox.Location = new System.Drawing.Point(95, 218);
+			this.isActiveCheckBox.Location = new System.Drawing.Point(90, 376);
 			this.isActiveCheckBox.Name = "isActiveCheckBox";
 			this.isActiveCheckBox.Size = new System.Drawing.Size(61, 17);
 			this.isActiveCheckBox.TabIndex = 4;
@@ -110,7 +110,7 @@
 			// 
 			this.isAdminCheckBox.AutoSize = true;
 			this.isAdminCheckBox.ForeColor = System.Drawing.Color.White;
-			this.isAdminCheckBox.Location = new System.Drawing.Point(95, 241);
+			this.isAdminCheckBox.Location = new System.Drawing.Point(90, 399);
 			this.isAdminCheckBox.Name = "isAdminCheckBox";
 			this.isAdminCheckBox.Size = new System.Drawing.Size(62, 17);
 			this.isAdminCheckBox.TabIndex = 5;
@@ -119,7 +119,7 @@
 			// 
 			// closeButton
 			// 
-			this.closeButton.Location = new System.Drawing.Point(417, 264);
+			this.closeButton.Location = new System.Drawing.Point(412, 422);
 			this.closeButton.Name = "closeButton";
 			this.closeButton.Size = new System.Drawing.Size(75, 23);
 			this.closeButton.TabIndex = 6;
@@ -132,7 +132,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.SteelBlue;
-			this.ClientSize = new System.Drawing.Size(512, 305);
+			this.ClientSize = new System.Drawing.Size(508, 463);
 			this.ControlBox = false;
 			this.Controls.Add(this.closeButton);
 			this.Controls.Add(this.isAdminCheckBox);
@@ -143,8 +143,8 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.descriptionLable);
 			this.Controls.Add(this.fullNameLable);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "UpdateUserForm";
-			this.Text = "Update User";
 			this.Load += new System.EventHandler(this.UpdateUserForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

@@ -31,6 +31,7 @@
 			this.BackColor = System.Drawing.Color.SteelBlue;
 			this.ClientSize = new System.Drawing.Size(331, 261);
 			this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "BaseForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Load += new System.EventHandler(this.BaseForm_Load);

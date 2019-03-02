@@ -39,6 +39,8 @@
 			this.usersListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
 			this.welcomeToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
 			this.mainMenuStrip.SuspendLayout();
 			this.mainStatusStrip.SuspendLayout();
 			this.SuspendLayout();
@@ -52,7 +54,7 @@
 			this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
 			this.mainMenuStrip.Name = "mainMenuStrip";
 			this.mainMenuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-			this.mainMenuStrip.Size = new System.Drawing.Size(557, 24);
+			this.mainMenuStrip.Size = new System.Drawing.Size(1115, 24);
 			this.mainMenuStrip.TabIndex = 1;
 			this.mainMenuStrip.Text = "menuStrip1";
 			// 
@@ -112,7 +114,7 @@
 			// usersListToolStripMenuItem
 			// 
 			this.usersListToolStripMenuItem.Name = "usersListToolStripMenuItem";
-			this.usersListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.usersListToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
 			this.usersListToolStripMenuItem.Text = "Users &List";
 			this.usersListToolStripMenuItem.Click += new System.EventHandler(this.UsersListToolStripMenuItem_Click);
 			// 
@@ -121,10 +123,10 @@
 			this.mainStatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.mainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.welcomeToolStripStatusLabel});
-			this.mainStatusStrip.Location = new System.Drawing.Point(0, 332);
+			this.mainStatusStrip.Location = new System.Drawing.Point(0, 534);
 			this.mainStatusStrip.Name = "mainStatusStrip";
 			this.mainStatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-			this.mainStatusStrip.Size = new System.Drawing.Size(557, 22);
+			this.mainStatusStrip.Size = new System.Drawing.Size(1115, 22);
 			this.mainStatusStrip.TabIndex = 2;
 			this.mainStatusStrip.Text = "statusStrip1";
 			// 
@@ -134,18 +136,43 @@
 			this.welcomeToolStripStatusLabel.Size = new System.Drawing.Size(27, 17);
 			this.welcomeToolStripStatusLabel.Text = "----";
 			// 
+			// button1
+			// 
+			this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+			this.button1.ForeColor = System.Drawing.Color.DimGray;
+			this.button1.Location = new System.Drawing.Point(1023, 39);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(80, 64);
+			this.button1.TabIndex = 4;
+			this.button1.Text = "X";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(490, 58);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(91, 64);
+			this.button2.TabIndex = 4;
+			this.button2.Text = "button1";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(557, 354);
+			this.ClientSize = new System.Drawing.Size(1115, 556);
+			this.ControlBox = false;
+			this.Controls.Add(this.button2);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.mainStatusStrip);
 			this.Controls.Add(this.mainMenuStrip);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.IsMdiContainer = true;
 			this.MainMenuStrip = this.mainMenuStrip;
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "MainForm";
-			this.Text = "MainForm";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
 			this.mainMenuStrip.ResumeLayout(false);
@@ -170,5 +197,7 @@
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usersListToolStripMenuItem;
 		private System.Windows.Forms.ToolStripStatusLabel welcomeToolStripStatusLabel;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button button2;
 	}
 }

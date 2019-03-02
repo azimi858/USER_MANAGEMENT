@@ -92,6 +92,7 @@
 			// 
 			// closeButton
 			// 
+			this.closeButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.closeButton.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.closeButton.Location = new System.Drawing.Point(296, 352);
 			this.closeButton.Name = "closeButton";
@@ -108,7 +109,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.SteelBlue;
 			this.CancelButton = this.closeButton;
-			this.ClientSize = new System.Drawing.Size(384, 387);
+			this.ClientSize = new System.Drawing.Size(387, 387);
 			this.ControlBox = false;
 			this.Controls.Add(this.closeButton);
 			this.Controls.Add(this.button2);
@@ -118,10 +119,7 @@
 			this.Controls.Add(this.fullNameLabel);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Margin = new System.Windows.Forms.Padding(2);
-			this.MaximumSize = new System.Drawing.Size(400, 426);
-			this.MinimumSize = new System.Drawing.Size(400, 426);
 			this.Name = "UsersListForm";
-			this.Text = "Users List";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

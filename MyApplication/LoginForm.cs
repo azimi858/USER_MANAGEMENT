@@ -8,6 +8,10 @@ namespace MyApplication
 		{
 			InitializeComponent();
 		}
+		private void LoginForm_Load(object sender, System.EventArgs e)
+		{
+			
+		}
 
 		private void LoginButton_Click(object sender, System.EventArgs e)
 		{
@@ -119,6 +123,5 @@ namespace MyApplication
 		{
 			System.Windows.Forms.Application.Exit();
 		}
-
 	}
 }

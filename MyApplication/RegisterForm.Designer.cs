@@ -44,9 +44,10 @@
 			// 
 			this.usernameLable.AutoSize = true;
 			this.usernameLable.ForeColor = System.Drawing.Color.White;
-			this.usernameLable.Location = new System.Drawing.Point(17, 18);
+			this.usernameLable.Location = new System.Drawing.Point(13, 14);
+			this.usernameLable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.usernameLable.Name = "usernameLable";
-			this.usernameLable.Size = new System.Drawing.Size(89, 17);
+			this.usernameLable.Size = new System.Drawing.Size(74, 13);
 			this.usernameLable.TabIndex = 0;
 			this.usernameLable.Text = "&Username :";
 			// 
@@ -54,9 +55,10 @@
 			// 
 			this.passwordLable.AutoSize = true;
 			this.passwordLable.ForeColor = System.Drawing.Color.White;
-			this.passwordLable.Location = new System.Drawing.Point(17, 50);
+			this.passwordLable.Location = new System.Drawing.Point(13, 38);
+			this.passwordLable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.passwordLable.Name = "passwordLable";
-			this.passwordLable.Size = new System.Drawing.Size(86, 17);
+			this.passwordLable.Size = new System.Drawing.Size(70, 13);
 			this.passwordLable.TabIndex = 2;
 			this.passwordLable.Text = "&Password :";
 			// 
@@ -64,46 +66,51 @@
 			// 
 			this.fullnameLable.AutoSize = true;
 			this.fullnameLable.ForeColor = System.Drawing.Color.White;
-			this.fullnameLable.Location = new System.Drawing.Point(17, 82);
+			this.fullnameLable.Location = new System.Drawing.Point(13, 63);
+			this.fullnameLable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.fullnameLable.Name = "fullnameLable";
-			this.fullnameLable.Size = new System.Drawing.Size(86, 17);
+			this.fullnameLable.Size = new System.Drawing.Size(72, 13);
 			this.fullnameLable.TabIndex = 4;
 			this.fullnameLable.Text = "&Full Name :";
 			// 
 			// usernameTextBox
 			// 
 			this.usernameTextBox.Font = new System.Drawing.Font("Verdana", 8.25F);
-			this.usernameTextBox.Location = new System.Drawing.Point(114, 14);
+			this.usernameTextBox.Location = new System.Drawing.Point(89, 11);
+			this.usernameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.usernameTextBox.MaxLength = 20;
 			this.usernameTextBox.Name = "usernameTextBox";
-			this.usernameTextBox.Size = new System.Drawing.Size(409, 24);
+			this.usernameTextBox.Size = new System.Drawing.Size(319, 21);
 			this.usernameTextBox.TabIndex = 1;
 			// 
 			// passwordTextBox
 			// 
 			this.passwordTextBox.Font = new System.Drawing.Font("Verdana", 8.25F);
-			this.passwordTextBox.Location = new System.Drawing.Point(114, 46);
+			this.passwordTextBox.Location = new System.Drawing.Point(89, 35);
+			this.passwordTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.passwordTextBox.MaxLength = 40;
 			this.passwordTextBox.Name = "passwordTextBox";
-			this.passwordTextBox.Size = new System.Drawing.Size(409, 24);
+			this.passwordTextBox.Size = new System.Drawing.Size(319, 21);
 			this.passwordTextBox.TabIndex = 3;
 			this.passwordTextBox.UseSystemPasswordChar = true;
 			// 
 			// fullnameTextBox
 			// 
 			this.fullnameTextBox.Font = new System.Drawing.Font("Verdana", 8.25F);
-			this.fullnameTextBox.Location = new System.Drawing.Point(114, 78);
+			this.fullnameTextBox.Location = new System.Drawing.Point(89, 60);
+			this.fullnameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.fullnameTextBox.MaxLength = 50;
 			this.fullnameTextBox.Name = "fullnameTextBox";
-			this.fullnameTextBox.Size = new System.Drawing.Size(409, 24);
+			this.fullnameTextBox.Size = new System.Drawing.Size(319, 21);
 			this.fullnameTextBox.TabIndex = 5;
 			// 
 			// registerButton
 			// 
 			this.registerButton.Font = new System.Drawing.Font("Verdana", 8.25F);
-			this.registerButton.Location = new System.Drawing.Point(114, 115);
+			this.registerButton.Location = new System.Drawing.Point(89, 88);
+			this.registerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.registerButton.Name = "registerButton";
-			this.registerButton.Size = new System.Drawing.Size(96, 31);
+			this.registerButton.Size = new System.Drawing.Size(75, 24);
 			this.registerButton.TabIndex = 6;
 			this.registerButton.Text = "&Register";
 			this.registerButton.UseVisualStyleBackColor = true;
@@ -112,9 +119,10 @@
 			// resetBotton
 			// 
 			this.resetBotton.Font = new System.Drawing.Font("Verdana", 8.25F);
-			this.resetBotton.Location = new System.Drawing.Point(217, 115);
+			this.resetBotton.Location = new System.Drawing.Point(169, 88);
+			this.resetBotton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.resetBotton.Name = "resetBotton";
-			this.resetBotton.Size = new System.Drawing.Size(96, 31);
+			this.resetBotton.Size = new System.Drawing.Size(75, 24);
 			this.resetBotton.TabIndex = 7;
 			this.resetBotton.Text = "Re&set";
 			this.resetBotton.UseVisualStyleBackColor = true;
@@ -123,9 +131,10 @@
 			// loginBotton
 			// 
 			this.loginBotton.Font = new System.Drawing.Font("Verdana", 8.25F);
-			this.loginBotton.Location = new System.Drawing.Point(321, 115);
+			this.loginBotton.Location = new System.Drawing.Point(250, 88);
+			this.loginBotton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.loginBotton.Name = "loginBotton";
-			this.loginBotton.Size = new System.Drawing.Size(96, 31);
+			this.loginBotton.Size = new System.Drawing.Size(75, 24);
 			this.loginBotton.TabIndex = 8;
 			this.loginBotton.Text = "&Login";
 			this.loginBotton.UseVisualStyleBackColor = true;
@@ -135,9 +144,10 @@
 			// 
 			this.exitBotton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.exitBotton.Font = new System.Drawing.Font("Verdana", 8.25F);
-			this.exitBotton.Location = new System.Drawing.Point(424, 115);
+			this.exitBotton.Location = new System.Drawing.Point(330, 88);
+			this.exitBotton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.exitBotton.Name = "exitBotton";
-			this.exitBotton.Size = new System.Drawing.Size(96, 31);
+			this.exitBotton.Size = new System.Drawing.Size(75, 24);
 			this.exitBotton.TabIndex = 9;
 			this.exitBotton.Text = "E&xit";
 			this.exitBotton.UseVisualStyleBackColor = true;
@@ -146,11 +156,11 @@
 			// RegisterForm
 			// 
 			this.AcceptButton = this.registerButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.SteelBlue;
 			this.CancelButton = this.exitBotton;
-			this.ClientSize = new System.Drawing.Size(536, 152);
+			this.ClientSize = new System.Drawing.Size(424, 128);
 			this.ControlBox = false;
 			this.Controls.Add(this.exitBotton);
 			this.Controls.Add(this.loginBotton);
@@ -162,10 +172,9 @@
 			this.Controls.Add(this.fullnameLable);
 			this.Controls.Add(this.passwordLable);
 			this.Controls.Add(this.usernameLable);
-			this.MaximumSize = new System.Drawing.Size(554, 199);
-			this.MinimumSize = new System.Drawing.Size(554, 199);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "RegisterForm";
-			this.Text = "Register";
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RegisterForm_FormClosed);
 			this.Load += new System.EventHandler(this.RegisterForm_Load);
 			this.ResumeLayout(false);

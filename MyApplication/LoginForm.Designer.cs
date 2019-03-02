@@ -62,23 +62,21 @@
 			// 
 			// usernameTextBox
 			// 
-			this.usernameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.usernameTextBox.Location = new System.Drawing.Point(79, 11);
-			this.usernameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.usernameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.usernameTextBox.Location = new System.Drawing.Point(80, 11);
+			this.usernameTextBox.Margin = new System.Windows.Forms.Padding(2);
 			this.usernameTextBox.Name = "usernameTextBox";
-			this.usernameTextBox.Size = new System.Drawing.Size(282, 21);
+			this.usernameTextBox.Size = new System.Drawing.Size(281, 21);
 			this.usernameTextBox.TabIndex = 1;
 			this.usernameTextBox.Text = "dariush";
 			// 
 			// passwordTextBox
 			// 
-			this.passwordTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.passwordTextBox.Location = new System.Drawing.Point(79, 34);
-			this.passwordTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.passwordTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.passwordTextBox.Location = new System.Drawing.Point(80, 34);
+			this.passwordTextBox.Margin = new System.Windows.Forms.Padding(2);
 			this.passwordTextBox.Name = "passwordTextBox";
-			this.passwordTextBox.Size = new System.Drawing.Size(282, 21);
+			this.passwordTextBox.Size = new System.Drawing.Size(281, 21);
 			this.passwordTextBox.TabIndex = 3;
 			this.passwordTextBox.Text = "1234512345";
 			this.passwordTextBox.UseSystemPasswordChar = true;
@@ -86,7 +84,7 @@
 			// loginButton
 			// 
 			this.loginButton.Location = new System.Drawing.Point(80, 65);
-			this.loginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.loginButton.Margin = new System.Windows.Forms.Padding(2);
 			this.loginButton.Name = "loginButton";
 			this.loginButton.Size = new System.Drawing.Size(65, 24);
 			this.loginButton.TabIndex = 4;
@@ -97,7 +95,7 @@
 			// resetButton
 			// 
 			this.resetButton.Location = new System.Drawing.Point(152, 65);
-			this.resetButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.resetButton.Margin = new System.Windows.Forms.Padding(2);
 			this.resetButton.Name = "resetButton";
 			this.resetButton.Size = new System.Drawing.Size(65, 24);
 			this.resetButton.TabIndex = 5;
@@ -108,7 +106,7 @@
 			// registerButton
 			// 
 			this.registerButton.Location = new System.Drawing.Point(224, 65);
-			this.registerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.registerButton.Margin = new System.Windows.Forms.Padding(2);
 			this.registerButton.Name = "registerButton";
 			this.registerButton.Size = new System.Drawing.Size(65, 24);
 			this.registerButton.TabIndex = 6;
@@ -120,7 +118,7 @@
 			// 
 			this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.exitButton.Location = new System.Drawing.Point(296, 65);
-			this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.exitButton.Margin = new System.Windows.Forms.Padding(2);
 			this.exitButton.Name = "exitButton";
 			this.exitButton.Size = new System.Drawing.Size(65, 24);
 			this.exitButton.TabIndex = 7;
@@ -135,7 +133,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.SteelBlue;
 			this.CancelButton = this.exitButton;
-			this.ClientSize = new System.Drawing.Size(373, 96);
+			this.ClientSize = new System.Drawing.Size(375, 101);
 			this.ControlBox = false;
 			this.Controls.Add(this.exitButton);
 			this.Controls.Add(this.registerButton);
@@ -145,12 +143,9 @@
 			this.Controls.Add(this.usernameTextBox);
 			this.Controls.Add(this.PasswordLabel);
 			this.Controls.Add(this.UsernameLabel);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-			this.MaximumSize = new System.Drawing.Size(389, 135);
-			this.MinimumSize = new System.Drawing.Size(389, 135);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "LoginForm";
-			this.Text = "Login";
+			this.Load += new System.EventHandler(this.LoginForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

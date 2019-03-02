@@ -95,5 +95,10 @@ namespace MyApplication
 				usersListForm.Show();
 			}
 		}
+
+		private void button1_Click(object sender, System.EventArgs e)
+		{
+			System.Windows.Forms.Application.Exit();
+		}
 	}
 }
