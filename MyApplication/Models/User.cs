@@ -96,7 +96,51 @@
 
 		#endregion [ /توضیحات ]
 
-	}
+		#region [ نام نمایشی ]
 
+		/// <summary>
+		/// نام نمایشی
+		/// </summary>
+		public string DisplayName
+		{
+			get
+			{
+				string result = string.Empty;
+
+				if(string.IsNullOrWhiteSpace(FullName)==false)
+				{
+					result = FullName;
+				}
+
+				if(result != string.Empty)
+				{
+					result += " - ";
+				}
+
+				if(IsActive)
+				{
+					result += $" [Enable]";
+				}
+				else
+				{
+					result += $" [Disable]";
+				}
+
+				if(IsAdmin)
+				{
+					result += $" [Admin]";
+				}
+				else
+				{
+					result += $" [User]";
+				}
+
+				return result;
+			}
+		}
+
+		#endregion [ /نام نمایشی ]
+
+	}
 	#endregion [ /کلاس کاربر  ]
 }

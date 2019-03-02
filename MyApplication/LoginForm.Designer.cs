@@ -42,9 +42,10 @@
 			// 
 			this.UsernameLabel.AutoSize = true;
 			this.UsernameLabel.ForeColor = System.Drawing.Color.White;
-			this.UsernameLabel.Location = new System.Drawing.Point(14, 17);
+			this.UsernameLabel.Location = new System.Drawing.Point(11, 13);
+			this.UsernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.UsernameLabel.Name = "UsernameLabel";
-			this.UsernameLabel.Size = new System.Drawing.Size(78, 17);
+			this.UsernameLabel.Size = new System.Drawing.Size(65, 13);
 			this.UsernameLabel.TabIndex = 0;
 			this.UsernameLabel.Text = "&Username";
 			// 
@@ -52,9 +53,10 @@
 			// 
 			this.PasswordLabel.AutoSize = true;
 			this.PasswordLabel.ForeColor = System.Drawing.Color.White;
-			this.PasswordLabel.Location = new System.Drawing.Point(14, 48);
+			this.PasswordLabel.Location = new System.Drawing.Point(11, 37);
+			this.PasswordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.PasswordLabel.Name = "PasswordLabel";
-			this.PasswordLabel.Size = new System.Drawing.Size(75, 17);
+			this.PasswordLabel.Size = new System.Drawing.Size(61, 13);
 			this.PasswordLabel.TabIndex = 2;
 			this.PasswordLabel.Text = "&Password";
 			// 
@@ -62,9 +64,10 @@
 			// 
 			this.usernameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.usernameTextBox.Location = new System.Drawing.Point(102, 14);
+			this.usernameTextBox.Location = new System.Drawing.Point(79, 11);
+			this.usernameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.usernameTextBox.Name = "usernameTextBox";
-			this.usernameTextBox.Size = new System.Drawing.Size(361, 24);
+			this.usernameTextBox.Size = new System.Drawing.Size(282, 21);
 			this.usernameTextBox.TabIndex = 1;
 			this.usernameTextBox.Text = "dariush";
 			// 
@@ -72,18 +75,20 @@
 			// 
 			this.passwordTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.passwordTextBox.Location = new System.Drawing.Point(102, 44);
+			this.passwordTextBox.Location = new System.Drawing.Point(79, 34);
+			this.passwordTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.passwordTextBox.Name = "passwordTextBox";
-			this.passwordTextBox.Size = new System.Drawing.Size(361, 24);
+			this.passwordTextBox.Size = new System.Drawing.Size(282, 21);
 			this.passwordTextBox.TabIndex = 3;
 			this.passwordTextBox.Text = "1234512345";
 			this.passwordTextBox.UseSystemPasswordChar = true;
 			// 
 			// loginButton
 			// 
-			this.loginButton.Location = new System.Drawing.Point(103, 85);
+			this.loginButton.Location = new System.Drawing.Point(80, 65);
+			this.loginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.loginButton.Name = "loginButton";
-			this.loginButton.Size = new System.Drawing.Size(84, 31);
+			this.loginButton.Size = new System.Drawing.Size(65, 24);
 			this.loginButton.TabIndex = 4;
 			this.loginButton.Text = "&Login";
 			this.loginButton.UseVisualStyleBackColor = true;
@@ -91,9 +96,10 @@
 			// 
 			// resetButton
 			// 
-			this.resetButton.Location = new System.Drawing.Point(195, 85);
+			this.resetButton.Location = new System.Drawing.Point(152, 65);
+			this.resetButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.resetButton.Name = "resetButton";
-			this.resetButton.Size = new System.Drawing.Size(84, 31);
+			this.resetButton.Size = new System.Drawing.Size(65, 24);
 			this.resetButton.TabIndex = 5;
 			this.resetButton.Text = "&Reset";
 			this.resetButton.UseVisualStyleBackColor = true;
@@ -101,9 +107,10 @@
 			// 
 			// registerButton
 			// 
-			this.registerButton.Location = new System.Drawing.Point(288, 85);
+			this.registerButton.Location = new System.Drawing.Point(224, 65);
+			this.registerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.registerButton.Name = "registerButton";
-			this.registerButton.Size = new System.Drawing.Size(84, 31);
+			this.registerButton.Size = new System.Drawing.Size(65, 24);
 			this.registerButton.TabIndex = 6;
 			this.registerButton.Text = "Re&gister";
 			this.registerButton.UseVisualStyleBackColor = true;
@@ -112,9 +119,10 @@
 			// exitButton
 			// 
 			this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.exitButton.Location = new System.Drawing.Point(381, 85);
+			this.exitButton.Location = new System.Drawing.Point(296, 65);
+			this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.exitButton.Name = "exitButton";
-			this.exitButton.Size = new System.Drawing.Size(84, 31);
+			this.exitButton.Size = new System.Drawing.Size(65, 24);
 			this.exitButton.TabIndex = 7;
 			this.exitButton.Text = "E&xit";
 			this.exitButton.UseVisualStyleBackColor = true;
@@ -123,11 +131,11 @@
 			// LoginForm
 			// 
 			this.AcceptButton = this.loginButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.SteelBlue;
 			this.CancelButton = this.exitButton;
-			this.ClientSize = new System.Drawing.Size(477, 118);
+			this.ClientSize = new System.Drawing.Size(373, 96);
 			this.ControlBox = false;
 			this.Controls.Add(this.exitButton);
 			this.Controls.Add(this.registerButton);
@@ -137,8 +145,10 @@
 			this.Controls.Add(this.usernameTextBox);
 			this.Controls.Add(this.PasswordLabel);
 			this.Controls.Add(this.UsernameLabel);
-			this.MaximumSize = new System.Drawing.Size(495, 165);
-			this.MinimumSize = new System.Drawing.Size(495, 165);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.MaximumSize = new System.Drawing.Size(389, 135);
+			this.MinimumSize = new System.Drawing.Size(389, 135);
 			this.Name = "LoginForm";
 			this.Text = "Login";
 			this.ResumeLayout(false);
