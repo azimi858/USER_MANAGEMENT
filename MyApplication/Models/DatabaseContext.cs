@@ -27,6 +27,13 @@
 		/// </summary>
 		public System.Data.Entity.DbSet<User> Users { get; set; }
 		#endregion [ /کاربر ]
+
+		#region [ شناسه ]
+		/// <summary>
+		/// کاربر
+		/// </summary>
+		public System.Data.Entity.DbSet<Identifier> Idents { get; set; }
+		#endregion [ /شناسه ]
 	}
 	#endregion [ /کلاس پایگاه داده ]
 }

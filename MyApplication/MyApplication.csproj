@@ -95,6 +95,7 @@
     </Compile>
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\DatabaseContext.cs" />
+    <Compile Include="Models\Identifier.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -152,6 +153,7 @@
     <EmbeddedResource Include="UpdateProfileForm.resx">
       <DependentUpon>UpdateProfileForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Files\chart.xlsx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
