@@ -68,7 +68,7 @@
 			this.usernameTextBox.Name = "usernameTextBox";
 			this.usernameTextBox.Size = new System.Drawing.Size(281, 21);
 			this.usernameTextBox.TabIndex = 1;
-			this.usernameTextBox.Text = "dariush";
+			this.usernameTextBox.Text = "mAzimi";
 			// 
 			// passwordTextBox
 			// 
@@ -78,7 +78,7 @@
 			this.passwordTextBox.Name = "passwordTextBox";
 			this.passwordTextBox.Size = new System.Drawing.Size(281, 21);
 			this.passwordTextBox.TabIndex = 3;
-			this.passwordTextBox.Text = "1234512345";
+			this.passwordTextBox.Text = "123456789";
 			this.passwordTextBox.UseSystemPasswordChar = true;
 			// 
 			// loginButton

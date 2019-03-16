@@ -41,6 +41,9 @@
 			this.welcomeToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.button3 = new System.Windows.Forms.Button();
+			this.identifireListBox = new System.Windows.Forms.ListBox();
 			this.mainMenuStrip.SuspendLayout();
 			this.mainStatusStrip.SuspendLayout();
 			this.SuspendLayout();
@@ -151,12 +154,38 @@
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(490, 58);
+			this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button2.Location = new System.Drawing.Point(12, 39);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(91, 64);
+			this.button2.Size = new System.Drawing.Size(148, 36);
 			this.button2.TabIndex = 4;
-			this.button2.Text = "button1";
+			this.button2.Text = "کارسازی با یک حساب";
 			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// textBox1
+			// 
+			this.textBox1.Location = new System.Drawing.Point(13, 82);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(147, 20);
+			this.textBox1.TabIndex = 8;
+			// 
+			// button3
+			// 
+			this.button3.Location = new System.Drawing.Point(13, 127);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(259, 23);
+			this.button3.TabIndex = 9;
+			this.button3.Text = "button3";
+			this.button3.UseVisualStyleBackColor = true;
+			// 
+			// identifireListBox
+			// 
+			this.identifireListBox.FormattingEnabled = true;
+			this.identifireListBox.Location = new System.Drawing.Point(13, 157);
+			this.identifireListBox.Name = "identifireListBox";
+			this.identifireListBox.Size = new System.Drawing.Size(259, 186);
+			this.identifireListBox.TabIndex = 10;
 			// 
 			// MainForm
 			// 
@@ -164,6 +193,9 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1115, 556);
 			this.ControlBox = false;
+			this.Controls.Add(this.identifireListBox);
+			this.Controls.Add(this.button3);
+			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.mainStatusStrip);
@@ -173,7 +205,6 @@
 			this.MainMenuStrip = this.mainMenuStrip;
 			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "MainForm";
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
 			this.mainMenuStrip.ResumeLayout(false);
 			this.mainMenuStrip.PerformLayout();
@@ -199,5 +230,8 @@
 		private System.Windows.Forms.ToolStripStatusLabel welcomeToolStripStatusLabel;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.ListBox identifireListBox;
 	}
 }

@@ -57,9 +57,9 @@ namespace MyApplication
 						IsAdmin = true,
 						IsActive = true,
 
-						Username = "Dariush",
-						Password = "1234512345",
-						FullName = "Mr. Dariush Tasdighi"
+						Username = "mAzimi",
+						Password = "123456789",
+						FullName = "Mr. Mehdi Azimi"
 					};
 
 					databaseContext.Users.Add(adminUser);
@@ -81,15 +81,15 @@ namespace MyApplication
 					databaseContext = null;
 				}
 			}
-            // **************************************************
-            // **************************************************
-            // **************************************************
+			// **************************************************
+			// **************************************************
+			// **************************************************
 
-            // **************************************************
-            //System.Windows.Forms.Application.Run(new LoginForm());
+			// **************************************************
+			//System.Windows.Forms.Application.Run(new LoginForm());
 
-            #region Runing Startup Form and then Disposing!
-            LoginForm loginForm = new LoginForm();
+			#region Runing Startup Form and then Disposing!
+			LoginForm loginForm = new LoginForm();
 
 			System.Windows.Forms.Application.Run(loginForm);
 

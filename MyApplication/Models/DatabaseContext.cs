@@ -30,10 +30,17 @@
 
 		#region [ شناسه ]
 		/// <summary>
-		/// کاربر
+		/// شناسه
 		/// </summary>
 		public System.Data.Entity.DbSet<Identifier> Idents { get; set; }
 		#endregion [ /شناسه ]
+
+		#region [ حساب ]
+		/// <summary>
+		/// حساب
+		/// </summary>
+		public System.Data.Entity.DbSet<Account> Accounts { get; set; }
+		#endregion [ /حساب ]
 	}
 	#endregion [ /کلاس پایگاه داده ]
 }

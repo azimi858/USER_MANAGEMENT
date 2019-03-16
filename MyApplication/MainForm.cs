@@ -100,5 +100,59 @@ namespace MyApplication
 		{
 			System.Windows.Forms.Application.Exit();
 		}
+
+		private void button2_Click(object sender, System.EventArgs e)
+		{
+			Models.DatabaseContext databaseContext = null;
+
+			try
+			{
+				databaseContext = new Models.DatabaseContext();
+
+				Models.Identifier identifier =
+					databaseContext.Idents
+					.Where(current => string.Compare(current.Identifire, textBox1.Text, true) == 0)
+					.FirstOrDefault();
+
+				if (identifier != null)
+				{
+					System.Windows.Forms.MessageBox.Show
+						("This username is already exist! Please choose another one...");
+
+					textBox1.Focus();
+
+					return;
+				}
+
+				identifier = new Models.Identifier
+				{
+					Identifire = textBox1.Text,
+					IdentifireExpireDate = System.DateTime.Now,
+					IdentifireAddDate = System.DateTime.Today,
+					UserId = Infrastructure.Utility.AuthenticatedUser.Id,
+					IdentifireStatus = "فعال",
+					IdentifireType = "فارغ از مبلغ"
+				};
+
+				databaseContext.Idents.Add(identifier);
+
+				databaseContext.SaveChanges();
+
+				System.Windows.Forms.MessageBox.Show("Identifire Aded ...");
+
+			}
+			catch (System.Exception ex)
+			{
+				System.Windows.Forms.MessageBox.Show(ex.Message);
+			}
+			finally
+			{
+				if (databaseContext != null)
+				{
+					databaseContext.Dispose();
+					databaseContext = null;
+				}
+			}
+		}
 	}
 }
