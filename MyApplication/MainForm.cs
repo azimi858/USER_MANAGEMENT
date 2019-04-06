@@ -129,13 +129,12 @@ namespace MyApplication
 					Identifire = textBox1.Text,
 					IdentifireExpireDate = System.DateTime.Now,
 					IdentifireAddDate = System.DateTime.Today,
-					UserId = Infrastructure.Utility.AuthenticatedUser.Id,
+					UserId = Infrastructure.Utility.AuthenticatedUser,
 					IdentifireStatus = "فعال",
 					IdentifireType = "فارغ از مبلغ"
 				};
-
-				databaseContext.Idents.Add(identifier);
-
+                databaseContext.Entry(Infrastructure.Utility.AuthenticatedUser).State = System.Data.Entity.EntityState.Unchanged;
+				databaseContext.Idents.Add(identifier);                
 				databaseContext.SaveChanges();
 
 				System.Windows.Forms.MessageBox.Show("Identifire Aded ...");
