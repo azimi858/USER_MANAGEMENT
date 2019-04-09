@@ -152,10 +152,11 @@ namespace MyApplication
 				{
 					Identifire = identifireTextBox.Text,
 					IdentifireExpireDate = System.DateTime.Now,
-					IdentifireAddDate = System.DateTime.Today,
-					UserId = Infrastructure.Utility.AuthenticatedUser,
+					IdentifireAddDate = System.DateTime.Now,
 					IdentifireStatus = "فعال",
-					IdentifireType = "فارغ از مبلغ"
+					IdentifireType = "فارغ از مبلغ",
+					AccountId = account,
+					UserId = Infrastructure.Utility.AuthenticatedUser
 				};
                 databaseContext.Entry(Infrastructure.Utility.AuthenticatedUser).State = System.Data.Entity.EntityState.Unchanged;
 				databaseContext.Idents.Add(identifier);                
