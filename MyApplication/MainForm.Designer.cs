@@ -41,9 +41,10 @@
 			this.welcomeToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.button3 = new System.Windows.Forms.Button();
-			this.identifireListBox = new System.Windows.Forms.ListBox();
+			this.identifireTextBox = new System.Windows.Forms.TextBox();
+			this.accountNumberTextBox = new System.Windows.Forms.TextBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
 			this.mainMenuStrip.SuspendLayout();
 			this.mainStatusStrip.SuspendLayout();
 			this.SuspendLayout();
@@ -57,7 +58,7 @@
 			this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
 			this.mainMenuStrip.Name = "mainMenuStrip";
 			this.mainMenuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-			this.mainMenuStrip.Size = new System.Drawing.Size(1115, 24);
+			this.mainMenuStrip.Size = new System.Drawing.Size(1268, 24);
 			this.mainMenuStrip.TabIndex = 1;
 			this.mainMenuStrip.Text = "menuStrip1";
 			// 
@@ -126,10 +127,10 @@
 			this.mainStatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.mainStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.welcomeToolStripStatusLabel});
-			this.mainStatusStrip.Location = new System.Drawing.Point(0, 534);
+			this.mainStatusStrip.Location = new System.Drawing.Point(0, 691);
 			this.mainStatusStrip.Name = "mainStatusStrip";
 			this.mainStatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-			this.mainStatusStrip.Size = new System.Drawing.Size(1115, 22);
+			this.mainStatusStrip.Size = new System.Drawing.Size(1268, 22);
 			this.mainStatusStrip.TabIndex = 2;
 			this.mainStatusStrip.Text = "statusStrip1";
 			// 
@@ -144,7 +145,7 @@
 			this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
 			this.button1.ForeColor = System.Drawing.Color.DimGray;
-			this.button1.Location = new System.Drawing.Point(1023, 39);
+			this.button1.Location = new System.Drawing.Point(1176, 39);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(80, 64);
 			this.button1.TabIndex = 4;
@@ -155,7 +156,7 @@
 			// button2
 			// 
 			this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(12, 39);
+			this.button2.Location = new System.Drawing.Point(125, 97);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(148, 36);
 			this.button2.TabIndex = 4;
@@ -163,39 +164,47 @@
 			this.button2.UseVisualStyleBackColor = true;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
-			// textBox1
+			// identifireTextBox
 			// 
-			this.textBox1.Location = new System.Drawing.Point(13, 82);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(147, 20);
-			this.textBox1.TabIndex = 8;
+			this.identifireTextBox.Location = new System.Drawing.Point(124, 71);
+			this.identifireTextBox.Name = "identifireTextBox";
+			this.identifireTextBox.Size = new System.Drawing.Size(147, 20);
+			this.identifireTextBox.TabIndex = 3;
 			// 
-			// button3
+			// accountNumberTextBox
 			// 
-			this.button3.Location = new System.Drawing.Point(13, 127);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(259, 23);
-			this.button3.TabIndex = 9;
-			this.button3.Text = "button3";
-			this.button3.UseVisualStyleBackColor = true;
+			this.accountNumberTextBox.Location = new System.Drawing.Point(125, 44);
+			this.accountNumberTextBox.Name = "accountNumberTextBox";
+			this.accountNumberTextBox.Size = new System.Drawing.Size(146, 20);
+			this.accountNumberTextBox.TabIndex = 1;
 			// 
-			// identifireListBox
+			// label1
 			// 
-			this.identifireListBox.FormattingEnabled = true;
-			this.identifireListBox.Location = new System.Drawing.Point(13, 157);
-			this.identifireListBox.Name = "identifireListBox";
-			this.identifireListBox.Size = new System.Drawing.Size(259, 186);
-			this.identifireListBox.TabIndex = 10;
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(13, 47);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(93, 13);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Account Number :";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(13, 74);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(53, 13);
+			this.label2.TabIndex = 2;
+			this.label2.Text = "Identifire :";
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1115, 556);
-			this.ControlBox = false;
-			this.Controls.Add(this.identifireListBox);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.textBox1);
+			this.ClientSize = new System.Drawing.Size(1268, 713);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.accountNumberTextBox);
+			this.Controls.Add(this.identifireTextBox);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.mainStatusStrip);
@@ -230,8 +239,9 @@
 		private System.Windows.Forms.ToolStripStatusLabel welcomeToolStripStatusLabel;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.ListBox identifireListBox;
+		private System.Windows.Forms.TextBox identifireTextBox;
+		private System.Windows.Forms.TextBox accountNumberTextBox;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label2;
 	}
 }

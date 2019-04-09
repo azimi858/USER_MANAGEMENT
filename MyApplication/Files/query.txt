@@ -1,0 +1,4 @@
+select Identifiers.*
+from dbo.Identifiers
+--where UserId = '722828df-7bb6-48d1-ae29-4de484f96473'
+order by IdentifireAddDate asc;

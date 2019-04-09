@@ -103,35 +103,61 @@ namespace MyApplication
 
 		private void button2_Click(object sender, System.EventArgs e)
 		{
+
 			Models.DatabaseContext databaseContext = null;
 
 			try
 			{
 				databaseContext = new Models.DatabaseContext();
 
+				Models.Account account =
+					databaseContext.Accounts
+					.Where(current => string.Compare(current.AccountNumber, accountNumberTextBox.Text, true) == 0)
+					.FirstOrDefault();
+
+				if (account == null)
+				{
+					account = new Models.Account
+					{
+						AccountNumber = accountNumberTextBox.Text,
+						AccountName = "درامدی",
+						AccountStatus = "",
+						AccountValue = true,
+						AccountOnlineCode = 22,
+						AccountDiscription = "",
+						AccountDate = System.DateTime.Now
+					};
+
+					databaseContext.Accounts.Add(account);
+
+					databaseContext.SaveChanges();
+				}
+
+
 				Models.Identifier identifier =
 					databaseContext.Idents
-					.Where(current => string.Compare(current.Identifire, textBox1.Text, true) == 0)
+					.Where(current => string.Compare(current.Identifire, identifireTextBox.Text, true) == 0)
 					.FirstOrDefault();
 
 				if (identifier != null)
 				{
 					System.Windows.Forms.MessageBox.Show
-						("This username is already exist! Please choose another one...");
+						("This Identifire is already exist!");
 
-					textBox1.Focus();
+					identifireTextBox.Focus();
 
 					return;
 				}
 
 				identifier = new Models.Identifier
 				{
-					Identifire = textBox1.Text,
+					Identifire = identifireTextBox.Text,
 					IdentifireExpireDate = System.DateTime.Now,
-					IdentifireAddDate = System.DateTime.Today,
-					UserId = Infrastructure.Utility.AuthenticatedUser.Id,
+					IdentifireAddDate = System.DateTime.Now,
 					IdentifireStatus = "فعال",
-					IdentifireType = "فارغ از مبلغ"
+					IdentifireType = "فارغ از مبلغ",
+					UserId = Infrastructure.Utility.AuthenticatedUser.Id,
+					AccountId = account.Id
 				};
 
 				databaseContext.Idents.Add(identifier);
