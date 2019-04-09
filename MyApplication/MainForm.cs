@@ -103,7 +103,6 @@ namespace MyApplication
 
 		private void button2_Click(object sender, System.EventArgs e)
 		{
-
 			Models.DatabaseContext databaseContext = null;
 
 			try
@@ -153,15 +152,13 @@ namespace MyApplication
 				{
 					Identifire = identifireTextBox.Text,
 					IdentifireExpireDate = System.DateTime.Now,
-					IdentifireAddDate = System.DateTime.Now,
+					IdentifireAddDate = System.DateTime.Today,
+					UserId = Infrastructure.Utility.AuthenticatedUser,
 					IdentifireStatus = "فعال",
-					IdentifireType = "فارغ از مبلغ",
-					UserId = Infrastructure.Utility.AuthenticatedUser.Id,
-					AccountId = account.Id
+					IdentifireType = "فارغ از مبلغ"
 				};
-
-				databaseContext.Idents.Add(identifier);
-
+                databaseContext.Entry(Infrastructure.Utility.AuthenticatedUser).State = System.Data.Entity.EntityState.Unchanged;
+				databaseContext.Idents.Add(identifier);                
 				databaseContext.SaveChanges();
 
 				System.Windows.Forms.MessageBox.Show("Identifire Aded ...");
