@@ -11,7 +11,7 @@
 			Id = System.Guid.NewGuid();
 		}
 
-		#region [ آی دی ]
+		#region [ آی دی کاربر ]
 		/// <summary>
 		/// آی دی کاربر
 		/// </summary>
