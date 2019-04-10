@@ -151,15 +151,17 @@ namespace MyApplication
 				identifier = new Models.Identifier
 				{
 					Identifire = identifireTextBox.Text,
-					IdentifireExpireDate = System.DateTime.Now,
-					IdentifireAddDate = System.DateTime.Now,
+					IdentifireCreateDate = System.DateTime.Now,
+					IdentifireCreateTime = System.DateTime.Now,
+					IdentifireExpireDate = new System.DateTime(2121, 03, 11),
+					Active = true,
 					IdentifireStatus = "فعال",
 					IdentifireType = "فارغ از مبلغ",
 					AccountId = account,
 					UserId = Infrastructure.Utility.AuthenticatedUser
 				};
-                databaseContext.Entry(Infrastructure.Utility.AuthenticatedUser).State = System.Data.Entity.EntityState.Unchanged;
-				databaseContext.Idents.Add(identifier);                
+				databaseContext.Entry(Infrastructure.Utility.AuthenticatedUser).State = System.Data.Entity.EntityState.Unchanged;
+				databaseContext.Idents.Add(identifier);
 				databaseContext.SaveChanges();
 
 				System.Windows.Forms.MessageBox.Show("Identifire Aded ...");

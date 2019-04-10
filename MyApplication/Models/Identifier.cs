@@ -49,8 +49,15 @@
 		/// <summary>
 		/// تاریخ کارسازی شناسه
 		/// </summary>
-		public System.DateTime IdentifireAddDate { get; set; }
+		public System.DateTime IdentifireCreateDate { get; set; }
 		#endregion [ /تاریخ کارسازی شناسه ]
+
+		#region [ زمان کارسازی شناسه ]
+		/// <summary>
+		/// زمان کارسازی شناسه
+		/// </summary>
+		public System.DateTime IdentifireCreateTime { get; set; }
+		#endregion [ /زمان کارسازی شناسه ]
 
 		#region [ تاریخ انقضای شناسه ]
 		/// <summary>
@@ -58,6 +65,13 @@
 		/// </summary>
 		public System.DateTime IdentifireExpireDate { get; set; }
 		#endregion [ /تاریخ انقضای شناسه ]
+
+		#region [ فعال/غیرفعال ]
+		/// <summary>
+		/// فعال/غیرفعال
+		/// </summary>
+		public bool Active { get; set; }
+		#endregion [ /فعال/غیرفعال ]
 
 		#region [ کاربر فعال ]
 		/// <summary>

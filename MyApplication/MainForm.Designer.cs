@@ -43,8 +43,8 @@
 			this.button2 = new System.Windows.Forms.Button();
 			this.identifireTextBox = new System.Windows.Forms.TextBox();
 			this.accountNumberTextBox = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
+			this.accountNumberLable = new System.Windows.Forms.Label();
+			this.identifireTextBoxLabel = new System.Windows.Forms.Label();
 			this.mainMenuStrip.SuspendLayout();
 			this.mainStatusStrip.SuspendLayout();
 			this.SuspendLayout();
@@ -147,7 +147,7 @@
 			this.button1.ForeColor = System.Drawing.Color.DimGray;
 			this.button1.Location = new System.Drawing.Point(1176, 39);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(80, 64);
+			this.button1.Size = new System.Drawing.Size(80, 80);
 			this.button1.TabIndex = 4;
 			this.button1.Text = "X";
 			this.button1.UseVisualStyleBackColor = true;
@@ -156,9 +156,9 @@
 			// button2
 			// 
 			this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(125, 97);
+			this.button2.Location = new System.Drawing.Point(124, 97);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(148, 36);
+			this.button2.Size = new System.Drawing.Size(250, 36);
 			this.button2.TabIndex = 4;
 			this.button2.Text = "کارسازی با یک حساب";
 			this.button2.UseVisualStyleBackColor = true;
@@ -168,41 +168,42 @@
 			// 
 			this.identifireTextBox.Location = new System.Drawing.Point(124, 71);
 			this.identifireTextBox.Name = "identifireTextBox";
-			this.identifireTextBox.Size = new System.Drawing.Size(147, 20);
+			this.identifireTextBox.Size = new System.Drawing.Size(250, 20);
 			this.identifireTextBox.TabIndex = 3;
+			this.identifireTextBox.Text = "111111111111111111111111111111";
 			// 
 			// accountNumberTextBox
 			// 
 			this.accountNumberTextBox.Location = new System.Drawing.Point(125, 44);
 			this.accountNumberTextBox.Name = "accountNumberTextBox";
-			this.accountNumberTextBox.Size = new System.Drawing.Size(146, 20);
+			this.accountNumberTextBox.Size = new System.Drawing.Size(250, 20);
 			this.accountNumberTextBox.TabIndex = 1;
 			// 
-			// label1
+			// accountNumberLable
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(13, 47);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(93, 13);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Account Number :";
+			this.accountNumberLable.AutoSize = true;
+			this.accountNumberLable.Location = new System.Drawing.Point(13, 47);
+			this.accountNumberLable.Name = "accountNumberLable";
+			this.accountNumberLable.Size = new System.Drawing.Size(93, 13);
+			this.accountNumberLable.TabIndex = 0;
+			this.accountNumberLable.Text = "Account Number :";
 			// 
-			// label2
+			// identifireTextBoxLabel
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(13, 74);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(53, 13);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "Identifire :";
+			this.identifireTextBoxLabel.AutoSize = true;
+			this.identifireTextBoxLabel.Location = new System.Drawing.Point(13, 74);
+			this.identifireTextBoxLabel.Name = "identifireTextBoxLabel";
+			this.identifireTextBoxLabel.Size = new System.Drawing.Size(53, 13);
+			this.identifireTextBoxLabel.TabIndex = 2;
+			this.identifireTextBoxLabel.Text = "Identifire :";
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1268, 713);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.identifireTextBoxLabel);
+			this.Controls.Add(this.accountNumberLable);
 			this.Controls.Add(this.accountNumberTextBox);
 			this.Controls.Add(this.identifireTextBox);
 			this.Controls.Add(this.button2);
@@ -211,9 +212,11 @@
 			this.Controls.Add(this.mainMenuStrip);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.IsMdiContainer = true;
-			this.MainMenuStrip = this.mainMenuStrip;
 			this.Margin = new System.Windows.Forms.Padding(2);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "MainForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
 			this.mainMenuStrip.ResumeLayout(false);
 			this.mainMenuStrip.PerformLayout();
@@ -241,7 +244,7 @@
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.TextBox identifireTextBox;
 		private System.Windows.Forms.TextBox accountNumberTextBox;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label accountNumberLable;
+		private System.Windows.Forms.Label identifireTextBoxLabel;
 	}
 }
