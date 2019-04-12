@@ -154,7 +154,7 @@ namespace MyApplication
 					IdentifireCreateDate = System.DateTime.Now,
 					IdentifireCreateTime = System.DateTime.Now,
 					IdentifireExpireDate = new System.DateTime(2121, 03, 11),
-					Active = true,
+					IdentifireActive = true,
 					IdentifireStatus = "فعال",
 					IdentifireType = "فارغ از مبلغ",
 					AccountId = account,

@@ -18,7 +18,8 @@
 		[System.ComponentModel.DataAnnotations.Required
 			(AllowEmptyStrings = false)]
 
-		[System.ComponentModel.DataAnnotations.StringLength(30)]
+		[System.ComponentModel.DataAnnotations.StringLength
+			(maximumLength: 30, MinimumLength = 30)]
 
 		[System.ComponentModel.DataAnnotations.Schema.Index
 			(IsUnique = true)]
@@ -29,6 +30,7 @@
 		/// شناسه
 		/// </summary>
 		public string Identifire { get; set; }
+
 		#endregion [ /شناسه ]
 
 		#region [ نوع شناسه ]
@@ -60,17 +62,21 @@
 		#endregion [ /زمان کارسازی شناسه ]
 
 		#region [ تاریخ انقضای شناسه ]
+
 		/// <summary>
 		/// تاریخ انقضای شناسه
 		/// </summary>
 		public System.DateTime IdentifireExpireDate { get; set; }
+
 		#endregion [ /تاریخ انقضای شناسه ]
 
 		#region [ فعال/غیرفعال ]
+
 		/// <summary>
 		/// فعال/غیرفعال
 		/// </summary>
-		public bool Active { get; set; }
+		public bool IdentifireActive { get; set; }
+
 		#endregion [ /فعال/غیرفعال ]
 
 		#region [ کاربر فعال ]
@@ -78,16 +84,16 @@
 		/// کاربر فعال
 		/// </summary>
 		//[System.ComponentModel.DataAnnotations.Schema.ForeignKey("User")]
-		//public System.Guid UserId { get; set; }
 		public Models.User UserId { get; set; }
+
 		#endregion [ /کاربر فعال ]
 
 		#region [ حساب فعال ]
 		/// <summary>
 		/// حساب فعال
 		/// </summary>
-		//public System.Guid AccountId { get; set; }
 		public Models.Account AccountId { get; set; }
+
 		#endregion [ /حساب فعال ]
 	}
 	#endregion [ /کلاس شناسه ]

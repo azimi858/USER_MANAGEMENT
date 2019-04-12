@@ -18,7 +18,8 @@
 		[System.ComponentModel.DataAnnotations.Required
 			(AllowEmptyStrings = false)]
 
-		[System.ComponentModel.DataAnnotations.StringLength(30)]
+		[System.ComponentModel.DataAnnotations.StringLength
+			(maximumLength: 16, MinimumLength = 16)]
 
 		[System.ComponentModel.DataAnnotations.Schema.Index
 			(IsUnique = true)]

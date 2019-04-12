@@ -36,7 +36,7 @@
 			(AllowEmptyStrings = false)]
 
 		[System.ComponentModel.DataAnnotations.StringLength
-			(maximumLength: 20, MinimumLength = 6)]
+			(maximumLength : 20, MinimumLength = 6)]
 
 		[System.ComponentModel.DataAnnotations.Schema.Index
 			(IsUnique = true)]
@@ -106,17 +106,17 @@
 			{
 				string result = string.Empty;
 
-				if(string.IsNullOrWhiteSpace(FullName)==false)
+				if (string.IsNullOrWhiteSpace(FullName) == false)
 				{
 					result = FullName;
 				}
 
-				if(result != string.Empty)
+				if (result != string.Empty)
 				{
 					result += " - ";
 				}
 
-				if(IsActive)
+				if (IsActive)
 				{
 					result += $" [Enable]";
 				}
@@ -125,7 +125,7 @@
 					result += $" [Disable]";
 				}
 
-				if(IsAdmin)
+				if (IsAdmin)
 				{
 					result += $" [Admin]";
 				}

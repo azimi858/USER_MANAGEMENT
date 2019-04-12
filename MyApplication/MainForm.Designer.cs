@@ -178,6 +178,7 @@
 			this.accountNumberTextBox.Name = "accountNumberTextBox";
 			this.accountNumberTextBox.Size = new System.Drawing.Size(250, 20);
 			this.accountNumberTextBox.TabIndex = 1;
+			this.accountNumberTextBox.Text = "1111111111111111";
 			// 
 			// accountNumberLable
 			// 
